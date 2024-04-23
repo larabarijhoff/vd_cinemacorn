@@ -3,7 +3,7 @@
   import {onMount} from "svelte"
 
   /* Array donde guardaremos la data */
-  let caras =[]
+  let peliculas =[]
 
   let color_pelo = d3
     .scaleLineal().range([0, 0.9])
@@ -49,11 +49,14 @@
 </script>
 
 <main> 
+  <div class = "header">
 
+    
+  </div>
   <div class= "container">
     {#each peliculas as peli}
       <div class = "person_container">
-        {#if peli.genero_peli === "Comedia"}
+        {#if peli.genero_peli === "Comedia"}  <!-- genero de peli = forma de figura -->
           <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="40" cy="40" r="40" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)})`}/>
           </svg>
@@ -87,7 +90,7 @@
           </svg>
         {/if}
 
-        {#if peli.genero === "Mujer"}
+        {#if peli.genero === "Mujer"}   <!--- genero = tipo de pelo -->
           <svg width="59" height="84" viewBox="0 0 59 84" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99998 9.00009C12 9.00009 18.6 10.1001 21 14.5001C24
              20.0001 22.5 32.5001 21 36.5001C19.5 40.5 24 70.5 25.5 72.0001C25.7086 72.2087 25.9366 72.6012 26.2377 
@@ -134,21 +137,62 @@
           </svg>
         {/if}    
         
-        {#if peli.cant_ojeras === "1"} <!--- cant de ojeras -->
+        {#if peli.cant_ojeras === "1"} <!--- max de peli = cant de ojeras -->
           <svg width="45" height="21" viewBox="0 0 45 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <ellipse cx="36" cy="8" rx="9" ry="8" fill="white"/>
             <ellipse cx="9" cy="8" rx="9" ry="8" fill="white"/>
             <path d="M1 17C7.21253 20.8737 10.8462 21.1244 17 17" stroke="white" stroke-width="2"/>
           </svg>
         {:else if peli.cant_ojeras === "2"} 
-          
-          
+          <svg width="45" height="21" viewBox="0 0 45 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="36" cy="8" rx="9" ry="8" fill="white"/>
+            <ellipse cx="9" cy="8" rx="9" ry="8" fill="white"/>
+            <path d="M28 17C34.2125 20.8737 37.8462 21.1244 44 17" stroke="white" stroke-width="2"/>
+            <path d="M1 17C7.21253 20.8737 10.8462 21.1244 17 17" stroke="white" stroke-width="2"/>
+          </svg>    
         {:else if peli.cant_ojeras === "3"}
-
-        {/if}  
-
-          
+          <svg width="45" height="25" viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 17C7.21253 20.8737 10.8462 21.1244 17 17" stroke="white" stroke-width="2"/>
+            <path d="M1 21C7.21253 24.8737 10.8462 25.1244 17 21" stroke="white" stroke-width="2"/>
+            <path d="M28 17C34.2125 20.8737 37.8462 21.1244 44 17" stroke="white" stroke-width="2"/>
+            <ellipse cx="36" cy="8" rx="9" ry="8" fill="white"/>
+            <ellipse cx="9" cy="8" rx="9" ry="8" fill="white"/>
+          </svg>
+        {:else if peli.cant_ojeras === "4"}
+          <svg width="45" height="25" viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="36" cy="8" rx="9" ry="8" fill="white"/>
+            <ellipse cx="9" cy="8" rx="9" ry="8" fill="white"/>
+            <path d="M1 17C7.21253 20.8737 10.8462 21.1244 17 17" stroke="white" stroke-width="2"/>
+            <path d="M1 21C7.21253 24.8737 10.8462 25.1244 17 21" stroke="white" stroke-width="2"/>
+            <path d="M28 21C34.2125 24.8737 37.8462 25.1244 44 21" stroke="white" stroke-width="2"/>
+            <path d="M28 17C34.2125 20.8737 37.8462 21.1244 44 17" stroke="white" stroke-width="2"/>
+          </svg>
+        {:else if peli.cant_ojeras === "5"} 
+          <svg width="45" height="29" viewBox="0 0 45 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="36" cy="8" rx="9" ry="8" fill="white"/>
+            <ellipse cx="9" cy="8" rx="9" ry="8" fill="white"/>
+            <path d="M1 17C7.21253 20.8737 10.8462 21.1244 17 17" stroke="white" stroke-width="2"/>
+            <path d="M1 21C7.21253 24.8737 10.8462 25.1244 17 21" stroke="white" stroke-width="2"/>
+            <path d="M28 21C34.2125 24.8737 37.8462 25.1244 44 21" stroke="white" stroke-width="2"/>
+            <path d="M1 25C7.21253 28.8737 10.8462 29.1244 17 25" stroke="white" stroke-width="2"/>
+            <path d="M28 17C34.2125 20.8737 37.8462 21.1244 44 17" stroke="white" stroke-width="2"/>
+          </svg>
+        {:else if peli.cant_ojeras === "6"} 
+          <svg width="45" height="29" viewBox="0 0 45 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="36" cy="8" rx="9" ry="8" fill="white"/>
+            <ellipse cx="9" cy="8" rx="9" ry="8" fill="white"/>
+            <path d="M1 17C7.21253 20.8737 10.8462 21.1244 17 17" stroke="white" stroke-width="2"/>
+            <path d="M1 21C7.21253 24.8737 10.8462 25.1244 17 21" stroke="white" stroke-width="2"/>
+            <path d="M28 21C34.2125 24.8737 37.8462 25.1244 44 21" stroke="white" stroke-width="2"/>
+            <path d="M1 25C7.21253 28.8737 10.8462 29.1244 17 25" stroke="white" stroke-width="2"/>
+            <path d="M28 25C34.2125 28.8737 37.8462 29.1244 44 25" stroke="white" stroke-width="2"/>
+            <path d="M28 17C34.2125 20.8737 37.8462 21.1244 44 17" stroke="white" stroke-width="2"/>
+          </svg>        
+        {/if}            
       </div>
+      <p class="name">
+        {peli.nombre}
+      </p>
     {/each}
   </div>
         
