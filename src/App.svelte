@@ -31,7 +31,7 @@
   let cant_ojeras = d3
     .scaleOrdinal()
     .domain(["1","2","3","4","5","6"])
-    .range(["./public/images/ojeras/unaOjera.svg", "../public/images/ojeras/dosOjeras.svg", "../public/images/ojeras/tresOjeras.svg", "../public/images/ojeras/cuatroOjeras.svg", "../public/images/ojeras/cincoOjeras.svg", "../public/images/ojeras/seisOjeras.svg"])
+    .range(["./images/ojeras/unaOjera.svg", "./images/ojeras/dosOjeras.svg", "./images/ojeras/tresOjeras.svg", "./images/ojeras/cuatroOjeras.svg", "./images/ojeras/cincoOjeras.svg", "./images/ojeras/seisOjeras.svg"])
 
   onMount(() => {
     d3.csv("./public/data/peliculas.csv", d3.autoType).then(data => {
