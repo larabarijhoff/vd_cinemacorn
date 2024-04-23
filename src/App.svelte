@@ -171,7 +171,7 @@
   }*/
   .name {
     font-size: 14px;
-    color: rgb(65, 65, 65);
+    color: rgb(255, 255, 255);
     font-weight: normal;
     text-align: center;
     margin-top: 5px;
