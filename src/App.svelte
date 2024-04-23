@@ -32,10 +32,10 @@
   let cant_ojeras = d3
     .scaleOrdinal()
     .domain(["1","2","3","4","5","6"])
-    .range(["../public/images/ojeras/unaOjera.svg", "../public/images/ojeras/dosOjeras.svg", "../public/images/ojeras/tresOjeras.svg", "../public/images/ojeras/cuatroOjeras.svg", "../public/images/ojeras/cincoOjeras.svg", "../public/images/ojeras/seisOjeras.svg"])
+    .range(["./public/images/ojeras/unaOjera.svg", "../public/images/ojeras/dosOjeras.svg", "../public/images/ojeras/tresOjeras.svg", "../public/images/ojeras/cuatroOjeras.svg", "../public/images/ojeras/cincoOjeras.svg", "../public/images/ojeras/seisOjeras.svg"])
 
   onMount(() => {
-    d3.csv("./data/peliculas.csv", d3.autoType).then(data => {
+    d3.csv("./public/data/peliculas.csv", d3.autoType).then(data => {
       console.log(data)
 
       /* Actualizamos dominio con la data de edad */
@@ -145,11 +145,49 @@
     {/each}
   </div>
         
-      
-        
 </main>
 
 <style>
-
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: auto;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+  .person-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 180px 0 0;
+  } /*
+  .person {
+    width: 100px;
+    height: 100px;
+    border: 10px solid black;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: pink;
+  }*/
+  .name {
+    font-size: 14px;
+    color: rgb(65, 65, 65);
+    font-weight: normal;
+    text-align: center;
+    margin-top: 5px;
+  }
 
 </style>
