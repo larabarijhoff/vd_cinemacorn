@@ -5,8 +5,7 @@
   /* Array donde guardaremos la data */
   let peliculas = []
 
-  let color_pelo = d3
-    .scaleLineal().range([0, 0.9])
+  let color_pelo = d3.scaleLinear()
 
   let hue_figura = d3
     .scaleOrdinal()
@@ -14,7 +13,7 @@
     .range(["357", "195", "270", "26","48"])
 
   let luminosidad = d3 // luminosidad de color de tipito
-    .scaleLineal()
+    .scaleLinear()
     .domain([1,0])
     .range([0.35,0.80])
 
