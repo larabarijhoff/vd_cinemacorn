@@ -44,7 +44,7 @@
 
   <div class= "container">
     {#each peliculas as peli}
-      <div class = "person_container">
+      <div class = "person-container">
         {#if peli.genero_peli === "Comedia"}  <!-- genero de peli = forma de figura -->
           <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="40" cy="40" r="40" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)})`}/>
