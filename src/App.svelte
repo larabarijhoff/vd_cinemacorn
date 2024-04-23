@@ -51,9 +51,12 @@
               <circle cx="40" cy="40" r="40" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
             </svg>
           {:else if peli.genero_peli === "Terror"}
-            <svg width="80" height="81" viewBox="0 0 80 81" xmlns="http://www.w3.org/2000/svg">
-              <path d="M40 0.5L80 40.5L40 80.5L0 40.5L40 0.5Z" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
+            <svg width="98" height="67" viewBox="0 0 98 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M69.6453 66.0722H28.8619C27.189 66.0725 23.2535 66.0722 23.2535 66.0722L21.5 61.5L0 1.07225V1.18266C0 
+              0.682621 0 1.07225 0 1.07225H0.938717L90.903 1.07218C94.5 1 94.5 1 94.5 1C94.5 1 97.5192 1.07573 97.5 
+              1V2V1.5L77 61.5L75.2536 66.0722C75.2536 66.0722 71.3181 66.0725 69.6453 66.0722Z" fill="#D9D9D9"/>
             </svg>
+            
           {:else if peli.genero_peli === "Documental"}
             <svg width="81" height="80" viewBox="0 0 81 80" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.5" width="80" height="80" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
@@ -75,8 +78,12 @@
               41L12.1955 12.3622L40.8333 0.5Z" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
             </svg>
           {:else if peli.genero_peli === "Sci-Fi"}
-            <svg width="82" height="82" viewBox="0 0 82 82" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.333313 0.5H81.3333L40.8333 81.5" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
+            <svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.8334 0C30.2285 0.0103977 20.0614 3.62597 12.5626 10.0535C5.06374 16.4811 0.845566 
+              25.1958 0.833435 34.2857C0.833435 42.8571 6.06677 53.95 14.8376 63.9286C23.6626 73.9821 33.3793 
+              80 40.8334 80C48.2876 80 58.0043 73.9964 66.8293 63.9286C75.6001 53.9286 80.8334 42.8571 80.8334 
+              34.2857C80.8213 25.1958 76.6031 16.4811 69.1043 10.0535C61.6055 3.62597 51.4384 0.0103977 
+              40.8334 0Z" fill="#D9D9D9"/> 
             </svg>
           {/if}
         </div>
