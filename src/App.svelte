@@ -3,7 +3,7 @@
   import {onMount} from "svelte"
 
   /* Array donde guardaremos la data */
-  let peliculas =[]
+  let peliculas = []
 
   let color_pelo = d3
     .scaleLineal().range([0, 0.9])
