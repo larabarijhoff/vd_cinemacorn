@@ -50,9 +50,11 @@
 
 <main> 
   <div class = "header">
-
-    
+    <h1>
+      Who's watching?
+    </h1>
   </div>
+
   <div class= "container">
     {#each peliculas as peli}
       <div class = "person_container">
@@ -135,60 +137,7 @@
             19.1744 14.4738C29.4637 -1.35793 78.2529 -6.27076 97.6652 16.2478C117.081 38.7636 102.476 75.6128 
             102.476 75.6128Z" fill={`hsl(0, 0%, ${color_pelo(peli.edad)})`}/>
           </svg>
-        {/if}    
-        
-        {#if peli.cant_ojeras === "1"} <!--- max de peli = cant de ojeras -->
-          <svg width="45" height="21" viewBox="0 0 45 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="36" cy="8" rx="9" ry="8" fill="white"/>
-            <ellipse cx="9" cy="8" rx="9" ry="8" fill="white"/>
-            <path d="M1 17C7.21253 20.8737 10.8462 21.1244 17 17" stroke="white" stroke-width="2"/>
-          </svg>
-        {:else if peli.cant_ojeras === "2"} 
-          <svg width="45" height="21" viewBox="0 0 45 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="36" cy="8" rx="9" ry="8" fill="white"/>
-            <ellipse cx="9" cy="8" rx="9" ry="8" fill="white"/>
-            <path d="M28 17C34.2125 20.8737 37.8462 21.1244 44 17" stroke="white" stroke-width="2"/>
-            <path d="M1 17C7.21253 20.8737 10.8462 21.1244 17 17" stroke="white" stroke-width="2"/>
-          </svg>    
-        {:else if peli.cant_ojeras === "3"}
-          <svg width="45" height="25" viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 17C7.21253 20.8737 10.8462 21.1244 17 17" stroke="white" stroke-width="2"/>
-            <path d="M1 21C7.21253 24.8737 10.8462 25.1244 17 21" stroke="white" stroke-width="2"/>
-            <path d="M28 17C34.2125 20.8737 37.8462 21.1244 44 17" stroke="white" stroke-width="2"/>
-            <ellipse cx="36" cy="8" rx="9" ry="8" fill="white"/>
-            <ellipse cx="9" cy="8" rx="9" ry="8" fill="white"/>
-          </svg>
-        {:else if peli.cant_ojeras === "4"}
-          <svg width="45" height="25" viewBox="0 0 45 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="36" cy="8" rx="9" ry="8" fill="white"/>
-            <ellipse cx="9" cy="8" rx="9" ry="8" fill="white"/>
-            <path d="M1 17C7.21253 20.8737 10.8462 21.1244 17 17" stroke="white" stroke-width="2"/>
-            <path d="M1 21C7.21253 24.8737 10.8462 25.1244 17 21" stroke="white" stroke-width="2"/>
-            <path d="M28 21C34.2125 24.8737 37.8462 25.1244 44 21" stroke="white" stroke-width="2"/>
-            <path d="M28 17C34.2125 20.8737 37.8462 21.1244 44 17" stroke="white" stroke-width="2"/>
-          </svg>
-        {:else if peli.cant_ojeras === "5"} 
-          <svg width="45" height="29" viewBox="0 0 45 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="36" cy="8" rx="9" ry="8" fill="white"/>
-            <ellipse cx="9" cy="8" rx="9" ry="8" fill="white"/>
-            <path d="M1 17C7.21253 20.8737 10.8462 21.1244 17 17" stroke="white" stroke-width="2"/>
-            <path d="M1 21C7.21253 24.8737 10.8462 25.1244 17 21" stroke="white" stroke-width="2"/>
-            <path d="M28 21C34.2125 24.8737 37.8462 25.1244 44 21" stroke="white" stroke-width="2"/>
-            <path d="M1 25C7.21253 28.8737 10.8462 29.1244 17 25" stroke="white" stroke-width="2"/>
-            <path d="M28 17C34.2125 20.8737 37.8462 21.1244 44 17" stroke="white" stroke-width="2"/>
-          </svg>
-        {:else if peli.cant_ojeras === "6"} 
-          <svg width="45" height="29" viewBox="0 0 45 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="36" cy="8" rx="9" ry="8" fill="white"/>
-            <ellipse cx="9" cy="8" rx="9" ry="8" fill="white"/>
-            <path d="M1 17C7.21253 20.8737 10.8462 21.1244 17 17" stroke="white" stroke-width="2"/>
-            <path d="M1 21C7.21253 24.8737 10.8462 25.1244 17 21" stroke="white" stroke-width="2"/>
-            <path d="M28 21C34.2125 24.8737 37.8462 25.1244 44 21" stroke="white" stroke-width="2"/>
-            <path d="M1 25C7.21253 28.8737 10.8462 29.1244 17 25" stroke="white" stroke-width="2"/>
-            <path d="M28 25C34.2125 28.8737 37.8462 29.1244 44 25" stroke="white" stroke-width="2"/>
-            <path d="M28 17C34.2125 20.8737 37.8462 21.1244 44 17" stroke="white" stroke-width="2"/>
-          </svg>        
-        {/if}            
+        {/if}         
       </div>
       <p class="name">
         {peli.nombre}
