@@ -55,8 +55,8 @@
               <path d="M40 0.5L80 40.5L40 80.5L0 40.5L40 0.5Z" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
             </svg>
           {:else if peli.genero_peli === "Documental"}
-            <svg width="81" height="80" viewBox="0 0 81 80" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.5" width="80" height="80" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
+            <svg width="75" height="75" viewBox="0 0 75 75" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.5" width="75" height="75" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
             </svg>
           {:else if peli.genero_peli === "Suspenso"}
             <svg width="82" height="82" viewBox="0 0 82 82" xmlns="http://www.w3.org/2000/svg">
@@ -160,7 +160,7 @@
     margin: auto;
     flex-wrap: wrap;
     max-width: 1000px;
-    gap: 30px;
+    gap: 80px;
     margin-bottom: 100px;
   }
   .person-container {
@@ -168,10 +168,12 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    flex: 180px 0 0;
+    width: 180px; /* Ancho deseado del contenedor */
+    height: 180px; /* Alto deseado del contenedor */
+    transform-origin: center center;
   } 
   .figura {
-    size: 50px
+    transform: scale(2);
   }
   .pelo {
     position: absolute;
@@ -180,20 +182,21 @@
     transform: translate(70%, -10%);
   }
   .pelo-hombre {
-    transform: translate(-50%, -50%);
+    transform: scale(2.1) translate(0%, -80%);
   }
   .pelo-otro {
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
   }
   .ojeras {
     position: absolute;
+    transform: scale(1.5) translate(0%, -100%);
   }
   .name {
-    font-size: 14px;
+    font-size: 20px;
     color: rgb(255, 255, 255);
     font-weight: normal;
     text-align: center;
-    margin-top: 5px;
+    margin-top: auto;
   }
 
 </style>
