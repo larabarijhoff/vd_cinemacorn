@@ -15,18 +15,7 @@
   let luminosidad = d3 // luminosidad de color de tipito
     .scaleLinear()
     .domain([1,0])
-    .range([0.35,0.80])
-
-  /*let figura = d3
-    .scaleOrdinal()
-    .domain(["Comedia", "Terror", "Documental","Suspenso","Romance","Rom-Com","Sci-Fi"])
-    .range()
-  */  
-
-  let largo_pelo = d3
-    .scaleOrdinal()
-    .domain(["Femenino", "Masculino", "Otro"])
-    .range()
+    .range([35,80])
 
   let cant_ojeras = d3
     .scaleOrdinal()
@@ -39,12 +28,11 @@
 
       /* Actualizamos dominio con la data de edad */
       let minMaxEdad = d3.extent(data, d => d.edad)
-      color_pelo = color_pelo.domain(minMaxEdad)
+      color_pelo = color_pelo.domain(minMaxEdad).range([0, 90])
 
       peliculas = data
     })
   })
- 
 </script>
 
 <main> 
