@@ -51,11 +51,12 @@
               <circle cx="40" cy="40" r="40" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
             </svg>
           {:else if peli.genero_peli === "Terror"}
-          <svg width="98" height="71" viewBox="0 0 98 71" xmlns="http://www.w3.org/2000/svg">
-            <path d="M69.6453 70.4999H28.8619C27.189 70.5002 23.2535 70.4999 23.2535 70.4999L21.5 65.5869L0 0.655344V0.773986C0 0.236675 
-            0 0.655344 0 0.655344H0.938717L90.903 0.65527C94.5 0.577708 94.5 0.577708 94.5 0.577708C94.5 0.577708 97.5192 0.659078 97.5 
-            0.577708V1.65224V1.11497L77 65.5869L75.2536 70.4999C75.2536 70.4999 71.3181 70.5002 69.6453 70.4999Z" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
+            <svg width="98" height="80" viewBox="0 0 98 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M69.6453 79.9999H28.8619C27.189 80.0002 23.2535 79.9999 23.2535 79.9999L21.5 75.0869L0 10.1553V10.274C0 9.73668 0 10.1553 0 
+              10.1553H0.938717L90.903 10.1553C94.5 10.0777 94.5 10.0777 94.5 10.0777C94.5 10.0777 97.5192 10.1591 97.5 10.0777V11.1522V10.615L77 
+              75.0869L75.2536 79.9999C75.2536 79.9999 71.3181 80.0002 69.6453 79.9999Z" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
             </svg>
+            
           {:else if peli.genero_peli === "Documental"}
             <svg width="75" height="75" viewBox="0 0 75 75" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.5" width="75" height="75" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
@@ -89,14 +90,11 @@
 
         <div class = "pelo">
           {#if peli.genero === "Mujer"}   <!--- genero = tipo de pelo -->
-            <svg class="pelo-mujer" width="59" height="84" viewBox="0 0 59 84" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99998 9.00009C12 9.00009 18.6 10.1001 21 14.5001C24
-              20.0001 22.5 32.5001 21 36.5001C19.5 40.5 24 70.5 25.5 72.0001C25.7086 72.2087 25.9366 72.6012 26.2377 
-              73.1195C28.1016 76.3279 32.7685 84.361 53 83.5001C53.8 83.5001 57 82.8334 58.5 82.5001L59 82.0001C54.8333 79.6668 
-              46.3 72.6001 45.5 63.0001C44.1666 57.3334 44 42.0001 44 39.5001C44 37 43.5 11.0001 31.5 5.00009C19.5 -0.99996 14.5 
-              8.85725e-05 4.49998 5.50009L8.99998 9.00009ZM1.98911 6.34938L7.5394 10.3139C8.04224 10.673 8.10222 11.3978 7.66527 
-              11.8347L7.60662 11.8934C7.25761 12.2424 6.70617 12.2845 6.30815 11.9927L0.81843 7.96686C0.216156 7.5252 0.29433 6.60283 
-              0.962343 6.26882C1.29311 6.10344 1.68819 6.13444 1.98911 6.34938Z" fill={`hsl(0, 0%, ${color_pelo(peli.edad)}%)`}/>
+          <svg class="pelo-mujer" width="56" height="83" viewBox="0 0 56 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.5 13.5808C15.1 9.1808 8.5 8.0808 5.5 8.0808L0 6C10 0.5 16 -1.91925 28 4.0808C40 10.0808 40.5 36.0807 
+            40.5 38.5808C40.5 41.0808 40.6667 56.4141 42 62.0808C42.8 71.6808 51.3333 78.7475 55.5 81.0808L55 81.5808C53.5 81.9142 
+            50.3 82.5808 49.5 82.5808C26 83.5808 23.5 72.5809 22 71.0808C20.5 69.5807 16 39.5807 17.5 35.5808C19 31.5808 20.5 
+            19.0808 17.5 13.5808Z" fill={`hsl(0, 0%, ${color_pelo(peli.edad)}%)`}/>
             </svg>
           {:else if peli.genero === "Hombre"}
             <svg class="pelo-hombre" width="108" height="65" viewBox="0 0 108 65" xmlns="http://www.w3.org/2000/svg">
@@ -151,12 +149,14 @@
 
 <style>
   .header {
+    font-family: 'Helvetica';
+    font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
   }
   
   .container {
@@ -185,13 +185,13 @@
     position: absolute;
   }
   .pelo-mujer {
-    transform: translate(70%, -10%);
+    transform: scale(1.65) translate(67%, -47%);
   }
   .pelo-hombre {
     transform: scale(2.1) translate(0%, -75%);
   }
   .pelo-otro {
-    transform: translate(0%, -50%);
+    transform: scale(1.6) translate(0%, -70%);
   }
   .ojeras {
     position: absolute;
@@ -199,6 +199,7 @@
   }
   .name {
     font-size: 20px;
+    font-family: 'Helvetica';
     color: rgb(255, 255, 255);
     font-weight: normal;
     text-align: center;
