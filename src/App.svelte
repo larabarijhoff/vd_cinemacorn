@@ -10,7 +10,7 @@
   let hue_figura = d3
     .scaleOrdinal()
     .domain(["Netflix","Prime","Max", "Star +","National Geographic"])
-    .range(["357", "195", "270", "26","48"])
+    .range([357, 195, 270, 26, 48])
 
   let luminosidad = d3 // luminosidad de color de tipito
     .scaleLinear()
@@ -30,7 +30,7 @@
 
   let cant_ojeras = d3
     .scaleOrdinal()
-    .domain(["1","2","3","4","5","6"])
+    .domain([1, 2, 3, 4, 5, 6])
     .range(["./images/ojeras/unaOjera.svg", "./images/ojeras/dosOjeras.svg", "./images/ojeras/tresOjeras.svg", "./images/ojeras/cuatroOjeras.svg", "./images/ojeras/cincoOjeras.svg", "./images/ojeras/seisOjeras.svg"])
 
   onMount(() => {
