@@ -23,7 +23,7 @@
     .range(["./images/ojeras/unaOjera.svg", "./images/ojeras/dosOjeras.svg", "./images/ojeras/tresOjeras.svg", "./images/ojeras/cuatroOjeras.svg", "./images/ojeras/cincoOjeras.svg", "./images/ojeras/seisOjeras.svg"])
 
   onMount(() => {
-    d3.csv("./public/data/peliculas.csv", d3.autoType).then(data => {
+    d3.csv("./data/peliculas.csv", d3.autoType).then(data => {
       console.log(data)
 
       /* Actualizamos dominio con la data de edad */
