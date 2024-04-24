@@ -201,7 +201,7 @@
   }
   .pelo-mujer {
     /* transform: scale(1.65) translate(67%, -47%); */
-    transform: scale(1.65) translate(0%, -45%)
+    transform: scale(1.65) translate(0%, -43%)
   }
   .pelo-hombre {
     transform: scale(2.1) translate(0%, -75%);
