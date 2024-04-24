@@ -33,10 +33,17 @@
       peliculas = data
     })
   })
+
 </script>
 
 <main> 
   <div class = "header">
+    <a href="index.html" class="back-button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path class="arrow" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+      </svg>
+    </a>
     <h1>
       Profiles
     </h1>
@@ -157,14 +164,15 @@
         </p>
       </div>
     {/each}
-  </div>
+  </div>  
         
 </main>
 
 <style>
   .header {
     font-family: 'Helvetica';
-    font-size: 24px;
+    font-size: 1.5vw;
+    letter-spacing: 3px;
     color: rgb(226, 226, 226);
     display: flex;
     justify-content: center;
@@ -181,7 +189,7 @@
     flex-wrap: wrap;
     max-width: 1200px;
     gap: 150px;
-    margin-bottom: 120px;
+    margin-bottom:120px;
   }
   .person-container {
     display: flex;
@@ -189,8 +197,8 @@
     flex-direction: column;
     align-items: center;
     width: 180px; 
-    height: 180px; 
-    transform-origin: center center;
+    height: 180px;  
+    transform-origin: center center; 
   } 
   .figura {
     transform: scale(2);
@@ -202,7 +210,6 @@
     filter: drop-shadow(0px -10px 15px rgba(255, 255, 255, 0.1));
   }
   .pelo-mujer {
-    /* transform: scale(1.65) translate(67%, -47%); */
     transform: scale(1.65) translate(0%, -43%)
   }
   .pelo-hombre {
@@ -223,4 +230,23 @@
     text-align: center;
     margin-top: auto;
   }
+
+  .back-button{   
+    position: absolute; 
+    top: 70px;
+    left: 30px;
+    z-index: 1000;
+    padding: 10px;
+  }
+
+  .arrow {
+    fill: gray; /* Color de la flecha */
+    transition: fill 0.3s; /* Transición suave */
+  }
+
+  .back-button:hover .arrow {
+    fill: white; /* Color cuando se pasa el mouse */
+  }
+  
+
 </style>

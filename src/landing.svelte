@@ -1,6 +1,7 @@
 <script>
   import * as d3 from "d3"
   import {onMount} from "svelte"
+  import { navigate } from 'svelte-routing'
 
   /* Array donde guardaremos la data */
   let peliculas = []
@@ -42,8 +43,7 @@
     </h1>
   </div>
 
-  <div class="mini-container">
-    <div class= "container">
+  <div class= "container">
       {#each peliculas as peli}
         <div class = "person-container">
           <div class = "figura">
@@ -148,25 +148,35 @@
           <p class="name">
             {peli.nombre}
           </p>
+
         </div>
+        
       {/each}
     </div>
-  </div>  
+  
+  <div class ="botones">
+    <a href="/profiles.html" class="link">
+      <button class="boton" > <span> See all profiles </span></button>
+    </a>
+    <a href="referencias.html" class="link">
+      <button class="boton"><span> See references </span></button>
+    </a>
+  </div>
  
-        
 </main>
 
 <style>
   .header {
     font-family: 'Helvetica';
-    font-size: 24px;
+    font-size: 1.5vw;
     color: rgb(226, 226, 226);
+    letter-spacing: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 15%;
-    margin-bottom: 8%;
+    margin-top: 25vh;
+    margin-bottom: 15vh;
   }
   .header h1{
     position: fixed;
@@ -177,11 +187,11 @@
     justify-content: flex-start;
     align-items: end;
     flex-wrap: nowrap;
-    /* width: 15000px; */
+    width: 900%; 
     height: 250px;
-    gap: 300px;
+    gap: 20vw;
     padding-left: 10%;
-    padding-right: 20%;
+    padding-right: 10%;
     
   }
   .person-container {
@@ -189,10 +199,16 @@
     justify-content: center;
     flex-direction: column;
     align-items: center; 
-    width: 180px; 
+    width: 200px; 
     height: 180px; 
     transform-origin: center center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   } 
+  .person-container:hover {
+    transform: translateY(-15px); /* Levanta el contenedor */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+  }
+
   .figura {
     transform: scale(2);
     filter: drop-shadow(-10px 10px 15px rgba(255, 255, 255, 0.1));  
@@ -217,10 +233,52 @@
   }
   .name {
     font-size: 20px;
+    letter-spacing: 2px;
     font-family: 'Helvetica';
     color: rgb(142, 141, 141);
     font-weight: normal;
     text-align: center;
     margin-top: auto;
+  }
+  .botones{
+    position: fixed; /* Posicionamiento fijo */
+    top: 80%; /* Alineación vertical al centro */
+    left: 50%; /* Alineación horizontal al centro */
+    transform: translate(-50%, -50%); /* Centrar el contenido */
+    z-index: 999; /* Asegura que esté en la parte superior */
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+  .boton{
+    font-family: 'Helvetica';
+    font-size: 1.2vw;
+    letter-spacing: 2px;
+    background-color: transparent;
+    color:grey;
+    border: 1px solid grey;
+    box-shadow: none;
+    padding: .5em 1.5em;
+    margin: 2em 1em 1em;
+    transition: background-color 0.3s ease;
+    /* transition: transform 10s ease, opacity 0.3s ease; */
+    
+  }
+  .boton:hover {
+    color: white; /* Color del texto */
+    box-shadow: 0 0 1px 1px white;
+  }
+
+  /* Aumenta la opacidad del texto cuando se coloca el cursor sobre el botón */
+  .boton:hover span {
+    opacity: 1; /* Opacidad completa */
+  }
+  .link {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición para el enlace */
+  }
+
+  .link:hover {
+      transform: translateY(-5px); /* Efecto de levantar un poco al pasar el mouse */
+      opacity: 0.8; /* Reducción de la opacidad al pasar el mouse */
   }
 </style>
