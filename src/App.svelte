@@ -56,7 +56,6 @@
               10.1553H0.938717L90.903 10.1553C94.5 10.0777 94.5 10.0777 94.5 10.0777C94.5 10.0777 97.5192 10.1591 97.5 10.0777V11.1522V10.615L77 
               75.0869L75.2536 79.9999C75.2536 79.9999 71.3181 80.0002 69.6453 79.9999Z" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
             </svg>
-            
           {:else if peli.genero_peli === "Documental"}
             <svg width="75" height="75" viewBox="0 0 75 75" xmlns="http://www.w3.org/2000/svg">
               <rect x="0.5" width="75" height="75" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
@@ -173,7 +172,6 @@
     margin-top: 50px;
     margin-bottom: 120px;
   }
-  
   .container {
     display: flex;
     justify-content: center;
@@ -221,5 +219,4 @@
     text-align: center;
     margin-top: auto;
   }
-
 </style>
