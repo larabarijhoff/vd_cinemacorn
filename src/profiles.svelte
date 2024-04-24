@@ -188,8 +188,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 180px; /* Ancho deseado del contenedor */
-    height: 180px; /* Alto deseado del contenedor */
+    width: 180px; 
+    height: 180px; 
     transform-origin: center center;
   } 
   .figura {
@@ -199,7 +199,7 @@
   
   .pelo {
     position: absolute;
-    filter: drop-shadow(0px -20px 15px rgba(255, 255, 255, 0.1));
+    filter: drop-shadow(0px -10px 15px rgba(255, 255, 255, 0.1));
   }
   .pelo-mujer {
     /* transform: scale(1.65) translate(67%, -47%); */

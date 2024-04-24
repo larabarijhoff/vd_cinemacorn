@@ -15,6 +15,7 @@ Emi,Otro,20,Sci-Fi,1,Max,0.90
 Iara,Mujer,20,Rom-Com,5,Max,0.35
 Mariana,Mujer,20,Comedia,2,Netflix,0.30
 Joaquín,Hombre,21,Terror,3,Netflix,0.40
+Tomas,Hombre,20,Rom-Com,2,Star +,0.90
 Nicolas,Hombre,21,Sci-Fi,6,Netflix,0.20
 Tadeo,Hombre,20,Documental,4,National Geographic,0.33
 Lucas,Hombre,20,Documental,2,Max,0.00
@@ -30,7 +31,6 @@ Estanislao,Hombre,20,Rom-Com,5,Max,0.80
 Caterina,Mujer,20,Romance,3,Netflix,0.75
 Serena,Mujer,20,Sci-Fi,4,Netflix,0.50
 Tomas,Hombre,21,Romance,4,Prime,0.70
-Tomas,Hombre,20,Rom-Com,2,Star +,0.90
 Juana,Mujer,26,Rom-Com,3,Max,0.60
 Valentina,Mujer,20,Comedia,5,Prime,0.7
 Camilo,Hombre,20,Comedia,3,Max,0.4
