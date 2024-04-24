@@ -165,8 +165,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 250px;
-    margin-bottom: 100px;
+    margin-top: 15%;
+    margin-bottom: 8%;
   }
   .header h1{
     position: fixed;
