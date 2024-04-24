@@ -51,7 +51,7 @@
               <circle cx="40" cy="40" r="40" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
             </svg>
           {:else if peli.genero_peli === "Terror"}
-            <svg width="98" height="80" viewBox="0 0 98 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="98" height="80" viewBox="0 0 98 80" xmlns="http://www.w3.org/2000/svg">
               <path d="M69.6453 79.9999H28.8619C27.189 80.0002 23.2535 79.9999 23.2535 79.9999L21.5 75.0869L0 10.1553V10.274C0 9.73668 0 10.1553 0 
               10.1553H0.938717L90.903 10.1553C94.5 10.0777 94.5 10.0777 94.5 10.0777C94.5 10.0777 97.5192 10.1591 97.5 10.0777V11.1522V10.615L77 
               75.0869L75.2536 79.9999C75.2536 79.9999 71.3181 80.0002 69.6453 79.9999Z" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
@@ -61,9 +61,9 @@
               <rect x="0.5" width="75" height="75" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
             </svg>
           {:else if peli.genero_peli === "Suspenso"}
-            <svg width="82" height="82" viewBox="0 0 82 82" xmlns="http://www.w3.org/2000/svg">
-              <path d="M40.8333 0.5L69.4711 12.3622L81.3333 41L69.4711 69.6378L40.8333 81.5L12.1955 69.6378L0.333313 
-              41L12.1955 12.3622L40.8333 0.5Z" fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
+            <svg width="78" height="90" viewBox="0 0 78 90" xmlns="http://www.w3.org/2000/svg">
+              <path d="M39 0L77.9711 22.5V67.5L39 90L0.0288582 67.5V22.5L39 0Z" 
+              fill={`hsl(${hue_figura(peli.plataforma)}, 100%, ${luminosidad(peli.acompanado)}%)`}/>
             </svg>
           {:else if peli.genero_peli === "Romance"}
             <svg width="84" height="82" viewBox="0 0 84 82" xmlns="http://www.w3.org/2000/svg">
