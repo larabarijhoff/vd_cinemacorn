@@ -38,7 +38,7 @@
 <main> 
   <div class = "header">
     <h1>
-      Who's watching?
+      Profiles
     </h1>
   </div>
 
@@ -165,6 +165,7 @@
   .header {
     font-family: 'Helvetica';
     font-size: 24px;
+    color: rgb(226, 226, 226);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,9 +179,9 @@
     align-items: end;
     margin: auto;
     flex-wrap: wrap;
-    max-width: 1000px;
-    gap: 80px;
-    margin-bottom: 100px;
+    max-width: 1200px;
+    gap: 150px;
+    margin-bottom: 120px;
   }
   .person-container {
     display: flex;
@@ -193,9 +194,12 @@
   } 
   .figura {
     transform: scale(2);
+    filter: drop-shadow(-10px 10px 15px rgba(255, 255, 255, 0.1));  
   }
+  
   .pelo {
     position: absolute;
+    filter: drop-shadow(0px -20px 15px rgba(255, 255, 255, 0.1));
   }
   .pelo-mujer {
     /* transform: scale(1.65) translate(67%, -47%); */
@@ -214,7 +218,7 @@
   .name {
     font-size: 20px;
     font-family: 'Helvetica';
-    color: rgb(200, 199, 199);
+    color: rgb(142, 141, 141);
     font-weight: normal;
     text-align: center;
     margin-top: auto;
