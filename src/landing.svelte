@@ -1,7 +1,6 @@
 <script>
   import * as d3 from "d3"
   import {onMount} from "svelte"
-  import { navigate } from 'svelte-routing'
 
   /* Array donde guardaremos la data */
   let peliculas = []
