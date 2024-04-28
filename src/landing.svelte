@@ -33,6 +33,7 @@
       peliculas = data
     })
   })
+
 </script>
 
 <main> 

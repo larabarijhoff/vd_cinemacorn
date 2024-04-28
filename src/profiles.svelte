@@ -169,17 +169,26 @@
 </main>
 
 <style>
+  main {
+    padding-top: 120px; /* Adjust as needed to match the height of your fixed header */
+  }
+
   .header {
-    font-family: 'Helvetica';
-    font-size: 1.5vw;
-    letter-spacing: 3px;
-    color: rgb(226, 226, 226);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust background color as needed */
+  font-family: 'Helvetica';
+  font-size: 1.5vw;
+  letter-spacing: 3px;
+  color: rgb(226, 226, 226);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000; /* Ensure it's above other content */
+  padding: 10px 0; /* Adjust padding as needed */
   }
   .container {
     display: flex;
@@ -190,6 +199,7 @@
     max-width: 1200px;
     gap: 150px;
     margin-bottom:120px;
+    margin-top: 8%;
   }
   .person-container {
     display: flex;
@@ -231,12 +241,11 @@
     margin-top: auto;
   }
 
-  .back-button{   
-    position: absolute; 
-    top: 70px;
-    left: 30px;
-    z-index: 1000;
-    padding: 10px;
+  .back-button {
+  position: absolute;
+  left: 30px;
+  z-index: 1001; /* Ensure it's above the header */
+  align-items: center;
   }
 
   .arrow {
