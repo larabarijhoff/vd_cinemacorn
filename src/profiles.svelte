@@ -165,20 +165,33 @@
       </div>
     {/each}
   </div>  
-        
+  
+  <footer>
+    <div class="footer-content">
+      <p>Follow us:</p>
+      <div class="social-media-links">
+        <a href="https://example.com/facebook"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="https://example.com/twitter"><img src="twitter-icon.png" alt="Twitter"></a>
+      </div>
+    </div>
+  </footer>
+    
 </main>
+
+
 
 <style>
   main {
     padding-top: 120px; /* Adjust as needed to match the height of your fixed header */
-  }
+    overflow-x: hidden; /* Evitar scroll horizontal */
+}
 
   .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Adjust background color as needed */
+  background-color: rgba(0, 0, 0, 1); /*Para negro transparente: rgb(25, 25, 25) */
   font-family: 'Helvetica';
   font-size: 1.5vw;
   letter-spacing: 3px;
@@ -257,5 +270,30 @@
     fill: white; /* Color cuando se pasa el mouse */
   }
   
+  footer {
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+.footer-content {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-media-links {
+  margin-top: 10px;
+}
+
+.social-media-links a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media-links img {
+  width: 30px;
+  height: auto;
+}
+
+
 
 </style>
