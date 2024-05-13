@@ -175,8 +175,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 25vh;
-    margin-bottom: 15vh;
+    margin-top: 15vh;
+    /* margin-bottom: 15vh; */
+    height: 200px;
   }
   .header h1{
     position: fixed;

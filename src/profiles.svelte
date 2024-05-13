@@ -37,16 +37,17 @@
 </script>
 
 <main> 
-  <div class = "header">
+  <div class="header">
     <a href="index.html" class="back-button">
       <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" viewBox="0 0 24 24">
         <path d="M0 0h24v24H0z" fill="none"/>
         <path class="arrow" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
       </svg>
     </a>
-    <h1>
-      Profiles
-    </h1>
+    <h1>Profiles</h1>
+    <div class="create-button">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf48s4biAfR8dA42jMMzOKV53kA6S-JsgR0rwTCFAIbqnEvzg/viewform?vc=0&c=0&w=1&flr=0" target="_blank">+</a>
+    </div>
   </div>
 
   <div class= "container">
@@ -168,11 +169,25 @@
   
   <footer>
     <div class="footer-content">
-      <p>Follow us:</p>
-      <div class="social-media-links">
-        <a href="https://example.com/facebook"><img src="facebook-icon.png" alt="Facebook"></a>
-        <a href="https://example.com/twitter"><img src="twitter-icon.png" alt="Twitter"></a>
+      <p style="font-size: 20px;">CREDITS</p>
+      <div class="credits">
+        <p>Visual Editing</p>
+        <p>Creative Director</p>
+        <p>Data Manager</p>
       </div>
+      <div class="credits-names">
+        <p>Valentina Gayo</p>
+        <p>Lara Barijhoff</p>
+        <p>Camilo Suárez</p>
+      </div>
+      <p style="font-size: 20px;">SHARE</p>
+      <div class="social-media-links">
+        <img src="./images/iconos/facebook.svg" alt="Facebook">
+        <img src="./images/iconos/twitter.svg" alt="Twitter">
+        <img src="./images/iconos/whatsapp.svg" alt="Whatsapp">
+      </div>
+      <p style="font-size: 10px; color:gray; margin-right:30px; margin-left:30px;">At our company, we are committed to ensuring the best personalized experience for the enjoyment of multimedia content. We deeply appreciate your trust in our service. Rest assured, we prioritize the protection of your data, ensuring that it remains private and secure. Your privacy is of utmost importance to us as we strive to provide a seamless and enriching entertainment experience tailored to your preferences.</p>
+      <p style="color: gray" class="copyright">&copy; 2024 Your Company Name</p>
     </div>
   </footer>
     
@@ -270,30 +285,52 @@
     fill: white; /* Color cuando se pasa el mouse */
   }
   
+  .create-button {
+  position: absolute;
+  right: 60px; /* Ajusta el valor según sea necesario */
+  top: 50%; /* Lo coloca verticalmente al centro */
+  transform: translateY(-50%); /* Centra verticalmente */
+}
+
+.create-button a {
+  font-size: 60px; /* Tamaño del símbolo más */
+  color: gray;
+  text-decoration: none;
+}
+
+.create-button a:hover {
+  color: white; /* Cambia el color al pasar el mouse */
+}
+
   footer {
     background-color: rgba(0, 0, 0, 1);
   }
 
 .footer-content {
   color: white;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
+  font-family: 'Helvetica';
 }
 
-.social-media-links {
-  margin-top: 10px;
-}
-
-.social-media-links a {
-  display: inline-block;
-  margin-right: 10px;
-}
 
 .social-media-links img {
   width: 30px;
   height: auto;
+  margin-right: 10px;
+  margin-bottom: 30px;
 }
 
+.credits p {
+    margin: 0 40px;
+    display: inline-block;
+    font-weight: bold;
+  }
 
+  .credits-names p {
+    margin: 0 48px;
+    display: inline-block;
+    padding-bottom: 30px; 
+  }
 
 </style>
