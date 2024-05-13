@@ -175,7 +175,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 15vh;
+    margin-top: 13vh;
     /* margin-bottom: 15vh; */
     height: 200px;
   }
@@ -212,12 +212,12 @@
 
   .figura {
     transform: scale(2);
-    filter: drop-shadow(-10px 10px 15px rgba(255, 255, 255, 0.1));  
+    filter: drop-shadow(0px 10px 7px rgba(255, 255, 255, 0.1));  
   }
   
   .pelo {
     position: absolute;
-    filter: drop-shadow(0px -10px 15px rgba(255, 255, 255, 0.1));
+    filter: drop-shadow(0px -10px 10px rgba(255, 255, 255, 0.1));
   }
   .pelo-mujer {
     transform: scale(1.65) translate(0%, -43%)
