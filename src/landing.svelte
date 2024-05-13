@@ -188,11 +188,11 @@
     justify-content: flex-start;
     align-items: end;
     flex-wrap: nowrap;
-    width: 1000%; 
+    width: 900%; 
     height: 250px;
     gap: 20vw;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 7%;
+    padding-right: 7%;
     
   }
   .person-container {
