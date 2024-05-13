@@ -175,7 +175,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 15vh;
+    margin-top: 13vh;
     /* margin-bottom: 15vh; */
     height: 200px;
   }
