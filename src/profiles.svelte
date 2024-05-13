@@ -46,7 +46,7 @@
     </a>
     <h1>Profiles</h1>
     <div class="create-button">
-      <a href="create.html">+</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf48s4biAfR8dA42jMMzOKV53kA6S-JsgR0rwTCFAIbqnEvzg/viewform?vc=0&c=0&w=1&flr=0" target="_blank">+</a>
     </div>
   </div>
 
