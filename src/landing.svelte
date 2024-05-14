@@ -42,6 +42,9 @@
       Who's watching?
     </h1>
   </div>
+  <div class="logo">
+    <img src="./images/iconos/logo-nombre.svg" alt="logo de la empresa">
+  </div>
 
   <div class= "container">
       {#each peliculas as peli}
@@ -166,6 +169,14 @@
 </main>
 
 <style>
+  .logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 100px; /* Ancho de tu div */
+    height: 100px; /* Alto de tu div */
+    /* background-color: red; */
+  }
   .header {
     font-family: 'Helvetica';
     font-size: 1.5vw;

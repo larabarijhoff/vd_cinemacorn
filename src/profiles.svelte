@@ -178,8 +178,9 @@
         <img src="./images/iconos/twitter.svg" alt="Twitter">
         <img src="./images/iconos/whatsapp.svg" alt="Whatsapp">
       </div>
+      <img src="./images/iconos/logo-nombre.svg" alt="logo con nombre">
       <p style="font-size: 10px; color:gray; margin-right:30px; margin-left:30px;">At our company, we are committed to ensuring the best personalized experience for the enjoyment of multimedia content. We deeply appreciate your trust in our service. Rest assured, we prioritize the protection of your data, ensuring that it remains private and secure. Your privacy is of utmost importance to us as we strive to provide a seamless and enriching entertainment experience tailored to your preferences.</p>
-      <p style="color: gray" class="copyright">&copy; 2024 Your Company Name</p>
+      <!-- <p style="color: gray" class="copyright">&copy; 2024 Your Company Name</p> -->
     </div>
   </footer>
     
@@ -191,24 +192,26 @@
   main {
     padding-top: 120px; /* Adjust as needed to match the height of your fixed header */
     overflow-x: hidden; /* Evitar scroll horizontal */
-}
+  }
 
   .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 1); /*Para negro transparente: rgb(25, 25, 25) */
-  font-family: 'Helvetica';
-  font-size: 1.5vw;
-  letter-spacing: 3px;
-  color: rgb(226, 226, 226);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 1000; /* Ensure it's above other content */
-  padding: 10px 0; /* Adjust padding as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(14, 14, 14, 0.785);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Sombra en todos los lados */
+    font-family: 'Helvetica';
+    font-size: 1.5vw;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    color: rgb(226, 226, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000; /* Ensure it's above other content */
+    padding: 10px 0; /* Adjust padding as needed */
   }
   .container {
     display: flex;
@@ -294,15 +297,17 @@
   color: white; /* Cambia el color al pasar el mouse */
 }
 
-  footer {
-    background-color: rgba(0, 0, 0, 1);
-  }
+footer {
+  background-color: rgba(14, 14, 14, 0.545);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Sombra en todos los lados */
+}
 
 .footer-content {
   color: white;
   padding: 30px;
   text-align: center;
   font-family: 'Helvetica';
+  letter-spacing: 2px;
 }
 
 
@@ -317,12 +322,16 @@
     margin: 0 40px;
     display: inline-block;
     font-weight: bold;
+    letter-spacing: 4px;
   }
 
   .credits-names p {
-    margin: 0 48px;
+    margin: 0 60px;
     display: inline-block;
     padding-bottom: 30px; 
+    letter-spacing: 2px;
+    font-weight: lighter;
+    color: grey;
   }
 
 </style>
