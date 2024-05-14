@@ -1,9 +1,4 @@
-<svg width="176" height="75" viewBox="0 0 176 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M132 17C138.213 20.8737 141.846 21.1244 148 17" stroke="white" stroke-width="2"/>
-<path d="M132 21C138.213 24.8737 141.846 25.1244 148 21" stroke="white" stroke-width="2"/>
-<path d="M159 17C165.213 20.8737 168.846 21.1244 175 17" stroke="white" stroke-width="2"/>
-<ellipse cx="167" cy="8" rx="9" ry="8" fill="white"/>
-<ellipse cx="140" cy="8" rx="9" ry="8" fill="white"/>
+<svg width="389" height="30" viewBox="0 0 389 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <ellipse cx="10" cy="8" rx="9" ry="8" fill="white"/>
 <ellipse cx="37" cy="8" rx="9" ry="8" fill="white"/>
 <path d="M1 17C7.21253 20.8737 10.8462 21.1244 17 17" stroke="white" stroke-width="2"/>
@@ -11,25 +6,30 @@
 <ellipse cx="75" cy="8" rx="9" ry="8" fill="white"/>
 <path d="M94 17C100.213 20.8737 103.846 21.1244 110 17" stroke="white" stroke-width="2"/>
 <path d="M67 17C73.2125 20.8737 76.8462 21.1244 83 17" stroke="white" stroke-width="2"/>
-<ellipse cx="37" cy="53" rx="9" ry="8" fill="white"/>
-<ellipse cx="10" cy="53" rx="9" ry="8" fill="white"/>
-<path d="M2 62C8.21253 65.8737 11.8462 66.1244 18 62" stroke="white" stroke-width="2"/>
-<path d="M2 66C8.21253 69.8737 11.8462 70.1244 18 66" stroke="white" stroke-width="2"/>
-<path d="M29 66C35.2125 69.8737 38.8462 70.1244 45 66" stroke="white" stroke-width="2"/>
-<path d="M29 62C35.2125 65.8737 38.8462 66.1244 45 62" stroke="white" stroke-width="2"/>
-<ellipse cx="102" cy="53" rx="9" ry="8" fill="white"/>
-<ellipse cx="75" cy="53" rx="9" ry="8" fill="white"/>
-<path d="M67 62C73.2125 65.8737 76.8462 66.1244 83 62" stroke="white" stroke-width="2"/>
-<path d="M67 66C73.2125 69.8737 76.8462 70.1244 83 66" stroke="white" stroke-width="2"/>
-<path d="M94 66C100.213 69.8737 103.846 70.1244 110 66" stroke="white" stroke-width="2"/>
-<path d="M67 70C73.2125 73.8737 76.8462 74.1244 83 70" stroke="white" stroke-width="2"/>
-<path d="M94 62C100.213 65.8737 103.846 66.1244 110 62" stroke="white" stroke-width="2"/>
-<ellipse cx="167" cy="53" rx="9" ry="8" fill="white"/>
-<ellipse cx="140" cy="53" rx="9" ry="8" fill="white"/>
-<path d="M132 62C138.213 65.8737 141.846 66.1244 148 62" stroke="white" stroke-width="2"/>
-<path d="M132 66C138.213 69.8737 141.846 70.1244 148 66" stroke="white" stroke-width="2"/>
-<path d="M159 66C165.213 69.8737 168.846 70.1244 175 66" stroke="white" stroke-width="2"/>
-<path d="M132 70C138.213 73.8737 141.846 74.1244 148 70" stroke="white" stroke-width="2"/>
-<path d="M159 70C165.213 73.8737 168.846 74.1244 175 70" stroke="white" stroke-width="2"/>
-<path d="M159 62C165.213 65.8737 168.846 66.1244 175 62" stroke="white" stroke-width="2"/>
+<path d="M132 17C138.213 20.8737 141.846 21.1244 148 17" stroke="white" stroke-width="2"/>
+<path d="M132 21C138.213 24.8737 141.846 25.1244 148 21" stroke="white" stroke-width="2"/>
+<path d="M159 17C165.213 20.8737 168.846 21.1244 175 17" stroke="white" stroke-width="2"/>
+<ellipse cx="167" cy="8" rx="9" ry="8" fill="white"/>
+<ellipse cx="140" cy="8" rx="9" ry="8" fill="white"/>
+<ellipse cx="241" cy="8" rx="9" ry="8" fill="white"/>
+<ellipse cx="214" cy="8" rx="9" ry="8" fill="white"/>
+<path d="M206 17C212.213 20.8737 215.846 21.1244 222 17" stroke="white" stroke-width="2"/>
+<path d="M206 21C212.213 24.8737 215.846 25.1244 222 21" stroke="white" stroke-width="2"/>
+<path d="M233 21C239.213 24.8737 242.846 25.1244 249 21" stroke="white" stroke-width="2"/>
+<path d="M233 17C239.213 20.8737 242.846 21.1244 249 17" stroke="white" stroke-width="2"/>
+<ellipse cx="306" cy="8" rx="9" ry="8" fill="white"/>
+<ellipse cx="279" cy="8" rx="9" ry="8" fill="white"/>
+<path d="M271 17C277.213 20.8737 280.846 21.1244 287 17" stroke="white" stroke-width="2"/>
+<path d="M271 21C277.213 24.8737 280.846 25.1244 287 21" stroke="white" stroke-width="2"/>
+<path d="M298 21C304.213 24.8737 307.846 25.1244 314 21" stroke="white" stroke-width="2"/>
+<path d="M271 25C277.213 28.8737 280.846 29.1244 287 25" stroke="white" stroke-width="2"/>
+<path d="M298 17C304.213 20.8737 307.846 21.1244 314 17" stroke="white" stroke-width="2"/>
+<ellipse cx="371" cy="8" rx="9" ry="8" fill="white"/>
+<ellipse cx="344" cy="8" rx="9" ry="8" fill="white"/>
+<path d="M336 17C342.213 20.8737 345.846 21.1244 352 17" stroke="white" stroke-width="2"/>
+<path d="M336 21C342.213 24.8737 345.846 25.1244 352 21" stroke="white" stroke-width="2"/>
+<path d="M363 21C369.213 24.8737 372.846 25.1244 379 21" stroke="white" stroke-width="2"/>
+<path d="M336 25C342.213 28.8737 345.846 29.1244 352 25" stroke="white" stroke-width="2"/>
+<path d="M363 25C369.213 28.8737 372.846 29.1244 379 25" stroke="white" stroke-width="2"/>
+<path d="M363 17C369.213 20.8737 372.846 21.1244 379 17" stroke="white" stroke-width="2"/>
 </svg>
