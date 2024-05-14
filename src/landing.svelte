@@ -170,12 +170,11 @@
 
 <style>
   .logo{
-    position: absolute;
+    position: fixed;
     top: 30px;
     left: 30px;
-    width: 100px; /* Ancho de tu div */
-    height: 100px; /* Alto de tu div */
-    /* background-color: red; */
+    width: 100px; 
+    height: 100px; 
   }
   .header {
     font-family: 'Helvetica';
@@ -187,13 +186,11 @@
     align-items: center;
     flex-direction: column;
     margin-top: 13vh;
-    /* margin-bottom: 15vh; */
     height: 200px;
   }
   .header h1{
     position: fixed;
   }
- 
   .container {
     display: flex;
     justify-content: flex-start;
@@ -204,7 +201,6 @@
     gap: 20vw;
     padding-left: 7%;
     padding-right: 7%;
-    
   }
   .person-container {
     display: flex;
@@ -217,15 +213,13 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   } 
   .person-container:hover {
-    transform: translateY(-15px); /* Levanta el contenedor */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+    transform: translateY(-15px); 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
   }
-
   .figura {
     transform: scale(2);
     filter: drop-shadow(0px 10px 7px rgba(255, 255, 255, 0.1));  
   }
-  
   .pelo {
     position: absolute;
     filter: drop-shadow(0px -10px 10px rgba(255, 255, 255, 0.1));
@@ -253,14 +247,14 @@
     margin-top: auto;
   }
   .botones{
-    position: fixed; /* Posicionamiento fijo */
-    top: 80%; /* Alineación vertical al centro */
-    left: 50%; /* Alineación horizontal al centro */
-    transform: translate(-50%, -50%); /* Centrar el contenido */
-    z-index: 999; /* Asegura que esté en la parte superior */
-    display: flex; /* Utiliza flexbox */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
+    position: fixed; 
+    top: 80%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 999; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
   }
   .boton{
     font-family: 'Helvetica';
@@ -273,24 +267,19 @@
     padding: .5em 1.5em;
     margin: 2em 1em 1em;
     transition: background-color 0.3s ease;
-    /* transition: transform 10s ease, opacity 0.3s ease; */
-    
   }
   .boton:hover {
-    color: white; /* Color del texto */
+    color: white; 
     box-shadow: 0 0 1px 1px white;
   }
-
-  /* Aumenta la opacidad del texto cuando se coloca el cursor sobre el botón */
   .boton:hover span {
-    opacity: 1; /* Opacidad completa */
+    opacity: 1; 
   }
   .link {
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición para el enlace */
+    transition: transform 0.3s ease, opacity 0.3s ease; 
   }
-
   .link:hover {
-      transform: translateY(-5px); /* Efecto de levantar un poco al pasar el mouse */
-      opacity: 0.8; /* Reducción de la opacidad al pasar el mouse */
+      transform: translateY(-5px); 
+      opacity: 0.8; 
   }
 </style>

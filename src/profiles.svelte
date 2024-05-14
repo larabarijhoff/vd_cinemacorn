@@ -158,31 +158,37 @@
       </div>
     {/each}
   </div>  
-  
   <footer>
     <div class="footer-content">
-      <p style="font-size: 20px;">CREDITS</p>
-      <div class="credits">
-        <p>Visual Editing</p>
-        <p>Creative Director</p>
-        <p>Data Manager</p>
+      <div class="arriba-footer">
+        <div class="info">
+          <p style="font-size: 20px;">CREDITS</p>
+          <div class="credits">
+            <p>Visual Editing</p>
+            <p>Creative Director</p>
+            <p>Data Manager</p>
+          </div>
+          <div class="credits-names">
+            <p>Valentina Gayo</p>
+            <p>Lara Barijhoff</p>
+            <p>Camilo Suárez</p>
+          </div>
+          <p style="font-size: 20px;">CONTACT US</p>
+          <div class="social-media-links">
+            <img src="./images/iconos/facebook.svg" alt="Facebook">
+            <img src="./images/iconos/twitter.svg" alt="Twitter">
+            <img src="./images/iconos/whatsapp.svg" alt="Whatsapp">
+          </div>
+        </div>
+        <div class="extra">
+          <img src="./images/iconos/logo.svg" alt="logo con nombre">
+        </div>
       </div>
-      <div class="credits-names">
-        <p>Valentina Gayo</p>
-        <p>Lara Barijhoff</p>
-        <p>Camilo Suárez</p>
-      </div>
-      <p style="font-size: 20px;">SHARE</p>
-      <div class="social-media-links">
-        <img src="./images/iconos/facebook.svg" alt="Facebook">
-        <img src="./images/iconos/twitter.svg" alt="Twitter">
-        <img src="./images/iconos/whatsapp.svg" alt="Whatsapp">
-      </div>
-      <img src="./images/iconos/logo-nombre.svg" alt="logo con nombre">
-      <p style="font-size: 10px; color:gray; margin-right:30px; margin-left:30px;">At our company, we are committed to ensuring the best personalized experience for the enjoyment of multimedia content. We deeply appreciate your trust in our service. Rest assured, we prioritize the protection of your data, ensuring that it remains private and secure. Your privacy is of utmost importance to us as we strive to provide a seamless and enriching entertainment experience tailored to your preferences.</p>
-      <!-- <p style="color: gray" class="copyright">&copy; 2024 Your Company Name</p> -->
+      <p style="font-size: 10px; color:gray; margin-right:30px; margin-left:30px; text-align: center;">At our company, we are committed to ensuring the best personalized experience for the enjoyment of multimedia content. We deeply appreciate your trust in our service. Rest assured, we prioritize the protection of your data, ensuring that it remains private and secure. Your privacy is of utmost importance to us as we strive to provide a seamless and enriching entertainment experience tailored to your preferences.</p>
+
     </div>
   </footer>
+
     
 </main>
 
@@ -190,17 +196,16 @@
 
 <style>
   main {
-    padding-top: 120px; /* Adjust as needed to match the height of your fixed header */
-    overflow-x: hidden; /* Evitar scroll horizontal */
+    padding-top: 120px; 
+    overflow-x: hidden; 
   }
-
   .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(14, 14, 14, 0.785);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Sombra en todos los lados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); 
     font-family: 'Helvetica';
     font-size: 1.5vw;
     letter-spacing: 3px;
@@ -210,8 +215,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 1000; /* Ensure it's above other content */
-    padding: 10px 0; /* Adjust padding as needed */
+    z-index: 1000; 
+    padding: 10px 0; 
   }
   .container {
     display: flex;
@@ -237,7 +242,6 @@
     transform: scale(2);
     filter: drop-shadow(0px 10px 7px rgba(255, 255, 255, 0.1));  
   }
-  
   .pelo {
     position: absolute;
     filter: drop-shadow(0px -10px 10px rgba(255, 255, 255, 0.1));
@@ -263,68 +267,70 @@
     text-align: center;
     margin-top: auto;
   }
-
   .back-button {
   position: absolute;
   left: 30px;
-  z-index: 1001; /* Ensure it's above the header */
+  z-index: 1001; 
   align-items: center;
   }
-
   .arrow {
-    fill: gray; /* Color de la flecha */
-    transition: fill 0.3s; /* Transición suave */
+    fill: gray; 
+    transition: fill 0.3s; 
   }
-
   .back-button:hover .arrow {
-    fill: white; /* Color cuando se pasa el mouse */
+    fill: white; 
   }
-  
   .create-button {
   position: absolute;
-  right: 60px; /* Ajusta el valor según sea necesario */
-  top: 50%; /* Lo coloca verticalmente al centro */
-  transform: translateY(-50%); /* Centra verticalmente */
-}
-
-.create-button a {
-  font-size: 60px; /* Tamaño del símbolo más */
-  color: gray;
-  text-decoration: none;
-}
-
-.create-button a:hover {
-  color: white; /* Cambia el color al pasar el mouse */
-}
-
-footer {
-  background-color: rgba(14, 14, 14, 0.545);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Sombra en todos los lados */
-}
-
-.footer-content {
-  color: white;
-  padding: 30px;
-  text-align: center;
-  font-family: 'Helvetica';
-  letter-spacing: 2px;
-}
-
-
-.social-media-links img {
-  width: 30px;
-  height: auto;
-  margin-right: 10px;
-  margin-bottom: 30px;
-}
-
-.credits p {
+  right: 60px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  }
+  .create-button a {
+    font-size: 60px; 
+    color: gray;
+    text-decoration: none;
+  }
+  .create-button a:hover {
+    color: white; 
+  }
+  footer {
+    background-color: rgba(14, 14, 14, 0.545);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); 
+    margin-top: 50px;
+  }
+  .footer-content {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Helvetica';
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .arriba-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .info{
+    margin-right: 200px;
+  }
+  .social-media-links img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+  .credits p {
     margin: 0 40px;
     display: inline-block;
     font-weight: bold;
     letter-spacing: 4px;
   }
-
   .credits-names p {
     margin: 0 60px;
     display: inline-block;
