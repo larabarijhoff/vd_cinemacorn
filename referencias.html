@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VD | Peliculas</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1> Referencias </h1>
+    </div>
+    <div class="container">
+      <div class="left-container columna">
+        <div class="genero referencia">
+          <h2> Género </h2>
+          <img src="./images/referencias/pelos.svg">
+          <p> Mujer </p>
+          <p> Hombre </p>
+          <p> Otro </p>
+        </div>
+        <div class="edad referencia">
+          <h2> Edad </h2>
+          <img src = "./images/referencias/color-de-pelo.svg">
+          <p> Menos edad </p>
+          <p> Más edad </p>
+        </div>
+        <div class = "proporcion referencia">
+          <h2> Proporción de películas vistas acompañado </h2>
+          <img src ="./images/referencias/proporcion-pelis.svg">
+          <p> Menos acompañado </p>
+          <p> Más acompañado </p>
+        </div>
+        
+      </div>
+
+      <div class="ejemplo-container columna">
+
+
+      </div>
+
+      <div class="right-container columna">
+        <div class="genero-peli referencia">
+          <h2> Género de película favorito </h2>
+          <div class="primera-fila">
+            <img src="./images/referencias/genero-peli-1.svg">
+            <p> Comedia </p>
+            <p> Terror </p>
+            <p> Documental </p>
+          </div>
+          <div class="segunda-fila">
+            <img src="./images/referencias/genero-peli-2.svg">
+            <p> Suspenso </p>
+            <p> Romance </p>
+            <p> Rom-Com </p>
+            <p> Sci-Fi </p>
+          </div>
+        </div>
+        <div class="maximo-peli referencia">
+          <h2> Máximo de películas vistas en un día </h2>
+          <img src="./images/referencias/ojeras-ref.svg">
+        </div>
+        <div class="plataforma referencia">
+          <h2> Plataforma preferida </h2>
+          <img src="./images/referencias/colores-plataformas.svg">
+          <p> Netflix </p>
+          <p> Prime </p>
+          <p> Max </p>
+          <p> Star +</p>
+          <p> National Geographic  </p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <style>
+      .header{
+        font-family: 'Helvetica';
+        font-size: 1.5vw;
+        color: rgb(226, 226, 226);
+        letter-spacing: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        height: 100px;
+      }
+      .container {
+        height: 100vh; /* Alto del 100% de la ventana del navegador */
+        background-color: #515151; 
+        display: flex; /* Establecer como contenedor flex */
+        flex-direction: row; /* Disposición en columna */
+        justify-content: center; /* Centrar verticalmente el contenido */
+        align-items: center; /* Centrar horizontalmente el contenido */
+      }
+      .columna {
+        background-color: #868686; /*Color de fondo para resaltar los elementos */
+        padding: 20px; /* Espacio interno para resaltar los elementos */
+        flex: 1; /* Distribuir el espacio equitativamente entre los elementos */
+        display: flex; /* Establecer como contenedor flex */
+        flex-direction: column; /* Disposición en columna */
+        justify-content: center; /* Centrar verticalmente el contenido */
+        /* align-items: center; Centrar horizontalmente el contenido */
+      }
+      .container h2 {
+        font-family: 'Helvetica';
+        font-size: 1.3vw;
+        color: rgb(226, 226, 226);
+        letter-spacing: 3px;
+        margin-left: 0; /* Eliminar el margen izquierdo predeterminado */
+        margin-bottom: 10px; 
+      }
+      .container p {
+        font-family: Helvetica; /* Ejemplo de fuente */
+        color: rgb(226, 226, 226);
+        letter-spacing: 3px;
+        font-size: 1vw;
+        display: flex; /* Establecer como contenedor flex */
+        flex-direction: row; /* Disposición en columna */
+        display: inline-block;
+        justify-content: center;
+        margin-left:70px;
+      }
+      
+      
+
+
+
+    </style>
+
+  </body>
+</html>
