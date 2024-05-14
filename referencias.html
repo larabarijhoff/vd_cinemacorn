@@ -23,26 +23,37 @@
         <div class="genero referencia">
           <h2> Género </h2>
           <img src="./images/referencias/pelos.svg">
-          <p> Mujer </p>
-          <p> Hombre </p>
-          <p> Otro </p>
+          <div class="titulos">
+            <p> Mujer </p>
+            <p> Hombre </p>
+            <p> Otro </p>
+          </div>
         </div>
         <div class="edad referencia">
           <h2> Edad </h2>
           <img src = "./images/referencias/color-de-pelo.svg">
-          <p> Menos edad </p>
-          <p> Más edad </p>
+          <div class="titulos">
+            <p> Menos edad </p>
+            <p> Más edad </p>
+          </div>
         </div>
-        <div class = "proporcion referencia">
-          <h2> Proporción de películas vistas acompañado </h2>
-          <img src ="./images/referencias/proporcion-pelis.svg">
-          <p> Menos acompañado </p>
-          <p> Más acompañado </p>
+        <div class="plataforma referencia">
+          <h2> Plataforma preferida </h2>
+          <img src="./images/referencias/colores-plataformas.svg">
+          <div class="titulos-plataforma">
+            <p> Netflix </p>
+            <p> Prime </p>
+            <p> Max </p>
+            <p> Star +</p>
+            <p> National <br> Geographic  </p>
+          </div>
         </div>
+        
         
       </div>
 
       <div class="ejemplo-container columna">
+        <img src="./images/referencias/ejemplo-mina.svg">
 
 
       </div>
@@ -52,9 +63,11 @@
           <h2> Género de película favorito </h2>
           <div class="primera-fila">
             <img src="./images/referencias/genero-peli-1.svg">
-            <p> Comedia </p>
-            <p> Terror </p>
-            <p> Documental </p>
+            <div class="titulos">
+              <p> Comedia </p>
+              <p> Terror </p>
+              <p> Documental </p>
+            </div>
           </div>
           <div class="segunda-fila">
             <img src="./images/referencias/genero-peli-2.svg">
@@ -68,15 +81,15 @@
           <h2> Máximo de películas vistas en un día </h2>
           <img src="./images/referencias/ojeras-ref.svg">
         </div>
-        <div class="plataforma referencia">
-          <h2> Plataforma preferida </h2>
-          <img src="./images/referencias/colores-plataformas.svg">
-          <p> Netflix </p>
-          <p> Prime </p>
-          <p> Max </p>
-          <p> Star +</p>
-          <p> National Geographic  </p>
+        <div class = "proporcion referencia">
+          <h2> Proporción de películas vistas acompañado </h2>
+          <img src ="./images/referencias/proporcion-pelis.svg">
+          <div class="titulos">
+            <p> Menos acompañado </p>
+            <p> Más acompañado </p>
+          </div>
         </div>
+        
       </div>
 
 
@@ -109,20 +122,25 @@
       } 
       .container {
         height: 100vh; /* Alto del 100% de la ventana del navegador */
-        background-color: #515151; 
+        /* background-color: #515151;  */
         display: flex; /* Establecer como contenedor flex */
         flex-direction: row; /* Disposición en columna */
         justify-content: center; /* Centrar verticalmente el contenido */
-        align-items: center; /* Centrar horizontalmente el contenido */
+        align-items: flex-start; /* Centrar horizontalmente el contenido */
       }
       .columna {
-        background-color: #868686; /*Color de fondo para resaltar los elementos */
-        padding: 20px; /* Espacio interno para resaltar los elementos */
+        /* background-color: #868686;  */
+        padding-right: 20px;
+        padding-left: 20px;
         flex: 1; /* Distribuir el espacio equitativamente entre los elementos */
         display: flex; /* Establecer como contenedor flex */
         flex-direction: column; /* Disposición en columna */
-        justify-content: center; /* Centrar verticalmente el contenido */
-        /* align-items: center; Centrar horizontalmente el contenido */
+        justify-content: center; 
+        /* align-items: center;  */
+      }
+      .left-container{
+        margin-left: 0;
+        margin-top: 30px;
       }
       .container h2 {
         font-family: 'Helvetica';
@@ -130,20 +148,85 @@
         color: rgb(226, 226, 226);
         letter-spacing: 3px;
         margin-left: 0; /* Eliminar el margen izquierdo predeterminado */
-        margin-bottom: 10px; 
+        margin-bottom: 20px; 
+        margin-top: 30px;
       }
       .container p {
         font-family: Helvetica; /* Ejemplo de fuente */
-        color: rgb(226, 226, 226);
+        color:grey;
         letter-spacing: 3px;
         font-size: 1vw;
-        display: flex; /* Establecer como contenedor flex */
-        flex-direction: row; /* Disposición en columna */
+        display: inline-block; /* Establecer como contenedor flex */
+        flex-direction: column; /* Disposición en columna */
+        justify-content: center;
+      }
+      .titulos{
+        display: inline-block;
+      }
+      .primera-fila {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .primera-fila p{
         display: inline-block;
         justify-content: center;
-        margin-left:70px;
+        margin-left: 45px;
+        margin-right: 20px;
       }
-      
+      .segunda-fila p{
+        display: inline-block;
+        margin-right: 20px;
+        margin-left: 15px;
+      } 
+      .maximo-peli{
+        display: flex;
+        flex-direction: column;
+      }
+      .proporcion{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+      }
+      .proporcion p{
+        margin-right: 30px;
+        margin-left: 20px;
+      }
+      .genero p{
+        margin-right: 50px;
+        margin-left: 50px;
+      }
+      .edad{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .edad h2{
+        margin-right: 500px;
+      }
+      .edad p{
+        margin-right: 80px;
+        margin-left: 90px;
+      }
+      .plataforma{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+      }
+      .titulos-plataforma{
+        display: flex;
+        justify-content:center;
+      }
+
+      .plataforma p{
+        margin-right: 40px;
+        /* margin-left: 20px; */
+      }
+      .ejemplo-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+      }
       
 
 
