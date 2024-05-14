@@ -45,7 +45,7 @@
             <p> Prime </p>
             <p> Max </p>
             <p> Star +</p>
-            <p> National <br> Geographic  </p>
+            <p> NatGeo</p>
           </div>
         </div>
         
@@ -54,8 +54,6 @@
 
       <div class="ejemplo-container columna">
         <img src="./images/referencias/ejemplo-mina.svg">
-
-
       </div>
 
       <div class="right-container columna">
@@ -89,9 +87,7 @@
             <p> Más acompañado </p>
           </div>
         </div>
-        
       </div>
-
 
     </div>
 
@@ -121,7 +117,7 @@
         fill: white; /* Color cuando se pasa el mouse */
       } 
       .container {
-        height: 100vh; /* Alto del 100% de la ventana del navegador */
+        /* height: 100vh; Alto del 100% de la ventana del navegador */
         /* background-color: #515151;  */
         display: flex; /* Establecer como contenedor flex */
         flex-direction: row; /* Disposición en columna */
@@ -132,16 +128,20 @@
         /* background-color: #868686;  */
         padding-right: 20px;
         padding-left: 20px;
-        flex: 1; /* Distribuir el espacio equitativamente entre los elementos */
+        /* flex: 1; Distribuir el espacio equitativamente entre los elementos */
         display: flex; /* Establecer como contenedor flex */
         flex-direction: column; /* Disposición en columna */
         justify-content: center; 
         /* align-items: center;  */
       }
-      .left-container{
+      /* .left-container{
         margin-left: 0;
         margin-top: 30px;
+        width: 40%;
       }
+      .right-container{
+        width: 40%;
+      } */
       .container h2 {
         font-family: 'Helvetica';
         font-size: 1.3vw;
@@ -215,21 +215,22 @@
       }
       .titulos-plataforma{
         display: flex;
-        justify-content:center;
+        justify-content: space-evenly;
+        gap: 50px;
       }
 
       .plataforma p{
-        margin-right: 40px;
+        /* margin-right: 40px; */
+        display: inline;
         /* margin-left: 20px; */
       }
       .ejemplo-container{
-        display: flex;
+        /* width: 30%; */
+        flex-basis: 30%;
         justify-content: center;
-        margin-top: 150px;
+        /* margin-top: 150px; */
+        align-self: stretch;
       }
-      
-
-
 
     </style>
 
