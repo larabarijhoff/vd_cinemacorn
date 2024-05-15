@@ -158,10 +158,10 @@
     </div>
   
   <div class ="botones">
-    <a href="html/profiles.html" class="link">
+    <a href="/profiles.html" class="link">
       <button class="boton" > <span> See all profiles </span></button>
     </a>
-    <a href="html/referencias.html" class="link">
+    <a href="referencias.html" class="link">
       <button class="boton"><span> See references </span></button>
     </a>
   </div>

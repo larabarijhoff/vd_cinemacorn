@@ -160,32 +160,25 @@
   </div>  
   <footer>
     <div class="footer-content">
-      <div class="arriba-footer">
-        <div class="info">
-          <p style="font-size: 20px;">CREDITS</p>
-          <div class="credits">
-            <p>Visual Editing</p>
-            <p>Creative Director</p>
-            <p>Data Manager</p>
-          </div>
-          <div class="credits-names">
-            <p>Valentina Gayo</p>
-            <p>Lara Barijhoff</p>
-            <p>Camilo Suárez</p>
-          </div>
-          <p style="font-size: 20px;">CONTACT US</p>
-          <div class="social-media-links">
-            <img src="./images/iconos/facebook.svg" alt="Facebook">
-            <img src="./images/iconos/twitter.svg" alt="Twitter">
-            <img src="./images/iconos/whatsapp.svg" alt="Whatsapp">
-          </div>
-        </div>
-        <div class="extra">
-          <img src="./images/iconos/logo.svg" alt="logo con nombre">
-        </div>
+      <p style="font-size: 20px;">CREDITS</p>
+      <div class="credits">
+        <p>Visual Editing</p>
+        <p>Creative Director</p>
+        <p>Data Manager</p>
       </div>
-      <p style="font-size: 10px; color:gray; margin-right:30px; margin-left:30px; text-align: center;">At our company, we are committed to ensuring the best personalized experience for the enjoyment of multimedia content. We deeply appreciate your trust in our service. Rest assured, we prioritize the protection of your data, ensuring that it remains private and secure. Your privacy is of utmost importance to us as we strive to provide a seamless and enriching entertainment experience tailored to your preferences.</p>
-
+      <div class="credits-names">
+        <p>Valentina Gayo</p>
+        <p>Lara Barijhoff</p>
+        <p>Camilo Suárez</p>
+      </div>
+      <p style="font-size: 20px;">SHARE</p>
+      <div class="social-media-links">
+        <img src="./images/iconos/facebook.svg" alt="Facebook">
+        <img src="./images/iconos/twitter.svg" alt="Twitter">
+        <img src="./images/iconos/whatsapp.svg" alt="Whatsapp">
+      </div>
+      <p style="font-size: 10px; color:gray; margin-right:30px; margin-left:30px;">At our company, we are committed to ensuring the best personalized experience for the enjoyment of multimedia content. We deeply appreciate your trust in our service. Rest assured, we prioritize the protection of your data, ensuring that it remains private and secure. Your privacy is of utmost importance to us as we strive to provide a seamless and enriching entertainment experience tailored to your preferences.</p>
+      <p style="color: gray" class="copyright">&copy; 2024 CinemaCorn</p>
     </div>
   </footer>
 
