@@ -199,7 +199,7 @@
     width: 900%; 
     height: 250px;
     gap: 20vw;
-    padding-left: 7%;
+    padding-left: 8%;
     padding-right: 7%;
   }
   .person-container {
