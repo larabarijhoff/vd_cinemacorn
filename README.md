@@ -4,7 +4,7 @@
 
 ---
 
-Entrega Parcial | 1er Semestre 2024
+Entrega Parcial | 1er Semestre 2024 <br>
 Integrantes: Camilo Suarez, Valentina Gayo y Lara Barijhoff.
 
 ---
