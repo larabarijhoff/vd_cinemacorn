@@ -303,15 +303,7 @@
     align-items: center;
     justify-content: center;
   }
-  .arriba-footer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .info{
-    margin-right: 200px;
-  }
+  
   .social-media-links img {
     width: 30px;
     height: auto;
