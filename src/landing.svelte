@@ -158,7 +158,7 @@
     </div>
   
   <div class ="botones">
-    <a href="/html/profiles.html" class="link">
+    <a href="https://vd-perfiles.vercel.app" class="link">
       <button class="boton" > <span> See all profiles </span></button>
     </a>
     <a href="/html/referencias.html" class="link">
