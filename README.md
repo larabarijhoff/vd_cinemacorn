@@ -1,16 +1,11 @@
-# VD | Dataviz creativa
+# VD | CinemaCorn
 
 ### Visualización de datos cuantitativos, categóricos, ordinales y de intervalo con HTML, CSS, D3 y Svelte.
 
 ---
 
-
-![Final](thumbnail-2.png)
-
-## Boceto
-![Boceto](thumbnail.jpg)
-
-Referencias: [Escalas de d3.js](https://d3js.org/d3-scale)
+Entrega Parcial | 1er Semestre 2024
+Integrantes: Camilo Suarez, Valentina Gayo y Lara Barijhoff.
 
 ---
 
