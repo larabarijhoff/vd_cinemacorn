@@ -20,10 +20,10 @@
   let cant_ojeras = d3
     .scaleOrdinal()
     .domain([1, 2, 3, 4, 5, 6])
-    .range(["./images/ojeras/unaOjera.svg", "./images/ojeras/dosOjeras.svg", "./images/ojeras/tresOjeras.svg", "./images/ojeras/cuatroOjeras.svg", "./images/ojeras/cincoOjeras.svg", "./images/ojeras/seisOjeras.svg"])
+    .range(["/images/ojeras/unaOjera.svg", "/images/ojeras/dosOjeras.svg", "/images/ojeras/tresOjeras.svg", "/images/ojeras/cuatroOjeras.svg", "/images/ojeras/cincoOjeras.svg", "/images/ojeras/seisOjeras.svg"])
 
   onMount(() => {
-    d3.csv("./data/peliculas.csv", d3.autoType).then(data => {
+    d3.csv("/data/peliculas.csv", d3.autoType).then(data => {
       console.log(data)
 
       /* Actualizamos dominio con la data de edad */
@@ -43,7 +43,7 @@
     </h1>
   </div>
   <div class="logo">
-    <img src="./images/iconos/logo-nombre.svg" alt="logo de la empresa">
+    <img src="/images/iconos/logo-nombre.svg" alt="logo de la empresa">
   </div>
 
   <div class= "container">
@@ -158,10 +158,10 @@
     </div>
   
   <div class ="botones">
-    <a href="html/profiles.html" class="link">
+    <a href="/html/profiles.html" class="link">
       <button class="boton" > <span> See all profiles </span></button>
     </a>
-    <a href="html/referencias.html" class="link">
+    <a href="/html/referencias.html" class="link">
       <button class="boton"><span> See references </span></button>
     </a>
   </div>
